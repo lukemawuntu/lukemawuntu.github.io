@@ -8,7 +8,7 @@
   <style>
      @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
   </style>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
@@ -27,39 +27,39 @@
         <div class="textbox">
           <h1>Hi! I'm Luke Mawuntu</h1>
           <p>
-            Welcome to my personal page of dogs.
+            Welcome to my personal page of dogs. <br>I'm gonna introduce you to some of my buddies. <br>Each with their own unique appeal as a man's best friend.
           </p>
         </div>
         <img class="main-img" src="images/main-img.jpeg"/> 
       </div>
     </div>
 
-    <div id="gallery" class="gallery">
+    <div class="gallery">
       <h1 class="title">Say hello to the doggos!</h1>
-      
+      <p>click then hover on the images to read the article</p>
       <div class="dog-container">
         <div class="dog">
-          <img class="dog-icon" src="./images/dog1.png" alt="rius the black pug"/>
+          <img class="dog-icon" id="rius" src="./images/dog1.png" alt="rius the black pug"/>
           <h2>Rius</h2>
           <div class="dog-text">Black Pug</div>
         </div>
         <div class="dog">
-          <img class="dog-icon" src="./images/dog2.png" alt="klay the chocolate pug"/>
+          <img class="dog-icon" id="klay" src="./images/dog2.png" alt="klay the chocolate pug"/>
           <h2>Klay</h2>
           <div class="dog-text">Chocolate Pug</div>
         </div>
         <div class="dog">
-          <img class="dog-icon" src="./images/dog3.png" alt="antman the white siberian husky"/>
+          <img class="dog-icon" id="antman" src="./images/dog3.png" alt="antman the white siberian husky"/>
           <h2>Antman</h2>
           <div class="dog-text">White Siberian Husky</div>
         </div>
         <div class="dog">
-          <img class="dog-icon" src="./images/dog4.png" alt="shawn the tricolor shorthaired corgi"/>
+          <img class="dog-icon" id="shawn" src="./images/dog4.png" alt="shawn the tricolor shorthaired corgi"/>
           <h2>Shawn</h2>
           <div class="dog-text">Shorthaired Tricolor Corgi</div>
         </div>
       </div>
-      
+
     <div class="slider">
       <h1 class="slider-title">some of my favorite moments...</h1>
       <div class="image-slide-gallery">
@@ -75,9 +75,10 @@
     </div>
     </div>
     
+    <div class="blog-wrapper">
     <div id="blog-section" class="blog-section">
       <div class="blog">
-        <p>
+        <p class="blog-text">
         Rius is an adventurous little guy who knows no such thing as tired.<br>
         He loves to bite my sandals to get me to play with him.<br>
         He would constantly annoy people so that they would play.
@@ -87,7 +88,7 @@
     
     <div id="blog-section2" class="blog-section2">
       <div class="blog">
-        <p>
+        <p class="blog-text">
         Klay is an old pug. True to his age, he's one lazy dog.<br>
         Whenever he would be released outside the house,<br>
         Klay would just do his deed and come back.<br>
@@ -98,7 +99,7 @@
 
     <div id="blog-section3" class="blog-section3">
       <div class="blog">
-        <p>
+        <p class="blog-text">
         Antman is one energetic boy.<br>
         He would run around, even rushing past things.<br>
         He loves bread, and is a feared dog around the neighborhood.
@@ -108,7 +109,7 @@
 
     <div id="blog-section4" class="blog-section4">
       <div class="blog">
-        <p>
+        <p class="blog-text">
         Shawn is a teen-spirited dog.<br>
         He dislikes getting touched and would run away at contact.<br>
         If he were to be caught, he would make a fuss.<br>
@@ -116,6 +117,7 @@
         </p>
       </div>
     </div>
+  </div>
 
     <div id="contact-section" class="contact-section">
       <div id="contact-box" class="contact-box">

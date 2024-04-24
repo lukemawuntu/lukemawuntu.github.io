@@ -1,3 +1,36 @@
+//--------------------------------------------------------//
+//Click dog picture to navigate to their corresponding article
+console.log('12');
+
+const btnClick = document.querySelector('.btn-click');
+const dogIcons = document.querySelectorAll('.gallery .dog-container .dog-icon');
+
+for (let i = 0; i < dogIcons.length; i++) {
+  dogIcons[i].addEventListener('click', function(){
+    const clickedDogId = this.id;
+    switch (clickedDogId) {
+      case "rius":
+        window.location.href="#blog-section";
+        break;
+      case "klay":
+        window.location.href="#blog-section2";
+        break;
+      case "antman":
+        window.location.href="#blog-section3";
+        break;
+      case "shawn":
+        window.location.href="#blog-section4";
+        break;
+      default:
+        break;
+    }
+  });
+}
+//--------------------------------------------------------//
+
+
+
+//--------------------------------------------------------//
 //gallery image slider
 
 let firstIndex = 0;
